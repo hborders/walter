@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var url: URL?
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        if url == nil {
+            TextField(
+                "Paste in the URL and press enter: https://app.altarlive.com/stream/WXYZ",
+                value: $url,
+                formatter: URLFormatter(
+                    validator: { url in
+                        return url.absoluteString.starts(with: "https://app.altarlive.com/stream/")
+                    }
+                )
+            ).padding()
+        }
+        Web(url:$url)
     }
 }

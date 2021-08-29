@@ -10,7 +10,8 @@
 		7B17B53826DB3C2600C2D952 /* walterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17B53726DB3C2600C2D952 /* walterApp.swift */; };
 		7B17B53A26DB3C2600C2D952 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17B53926DB3C2600C2D952 /* ContentView.swift */; };
 		7B17B53C26DB3C2800C2D952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B17B53B26DB3C2800C2D952 /* Assets.xcassets */; };
-		7B17B53F26DB3C2800C2D952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B17B53E26DB3C2800C2D952 /* Preview Assets.xcassets */; };
+		7B17B54726DB407B00C2D952 /* Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17B54626DB407B00C2D952 /* Web.swift */; };
+		7B17B54926DB4B0400C2D952 /* URLFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17B54826DB4B0400C2D952 /* URLFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +19,9 @@
 		7B17B53726DB3C2600C2D952 /* walterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walterApp.swift; sourceTree = "<group>"; };
 		7B17B53926DB3C2600C2D952 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B17B53B26DB3C2800C2D952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B17B53E26DB3C2800C2D952 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B17B54026DB3C2800C2D952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B17B54626DB407B00C2D952 /* Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web.swift; sourceTree = "<group>"; };
+		7B17B54826DB4B0400C2D952 /* URLFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +58,10 @@
 				7B17B53926DB3C2600C2D952 /* ContentView.swift */,
 				7B17B53B26DB3C2800C2D952 /* Assets.xcassets */,
 				7B17B54026DB3C2800C2D952 /* Info.plist */,
-				7B17B53D26DB3C2800C2D952 /* Preview Content */,
+				7B17B54626DB407B00C2D952 /* Web.swift */,
+				7B17B54826DB4B0400C2D952 /* URLFormatter.swift */,
 			);
 			path = walter;
-			sourceTree = "<group>";
-		};
-		7B17B53D26DB3C2800C2D952 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7B17B53E26DB3C2800C2D952 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +121,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B17B53F26DB3C2800C2D952 /* Preview Assets.xcassets in Resources */,
 				7B17B53C26DB3C2800C2D952 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B17B54926DB4B0400C2D952 /* URLFormatter.swift in Sources */,
+				7B17B54726DB407B00C2D952 /* Web.swift in Sources */,
 				7B17B53A26DB3C2600C2D952 /* ContentView.swift in Sources */,
 				7B17B53826DB3C2600C2D952 /* walterApp.swift in Sources */,
 			);
@@ -268,7 +264,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"walter/Preview Content\"";
 				DEVELOPMENT_TEAM = HBJ6959CEN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = walter/Info.plist;
@@ -290,7 +285,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"walter/Preview Content\"";
 				DEVELOPMENT_TEAM = HBJ6959CEN;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = walter/Info.plist;
